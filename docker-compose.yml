@@ -6,7 +6,8 @@ services:
     ports:
       - "20128:20128"
     volumes:
-      - 9router-data:/app/data
+      9router-data:
+    external: true
     env_file:
       - .env
     environment:
